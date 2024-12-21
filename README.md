@@ -1,7 +1,9 @@
 # Calculator Project
 
 <p align="left">
- <img src="https://github.com/user-attachments/assets/calculator-image.png" alt="Calculator Image" width="50%" />
+ <img src="https://github.com/user-attachments/assets/a474a798-f7a9-4ceb-86c9-789729054d9e" alt="Calculator Image" width="14%" />
+ <img src="https://github.com/user-attachments/assets/8f05cd16-185d-48ee-927a-3f960bc61b8d" alt="Calculator Image" width="14%" />
+ <img src="https://github.com/user-attachments/assets/caa8616e-8f1c-4929-ab97-e2de939691ac" alt="Calculator Image" width="14%" />
 </p>
 
 ## Overview
@@ -33,10 +35,7 @@ A simple calculator built using HTML, CSS, and JavaScript. It features a respons
 ### `script.js`
 - **Purpose:** JavaScript functionality for the calculator.
 - **Details:**
-  - **`updateDisplay(value, resetError = true)`**:<br> 
-  
-  - Updates the calculator's display with the current value, and removes any error styles if needed.
-  - **`clickHandler(input)`**: <br>
-   - Handles user input, such as numbers, operators, and commands like "clear" and "=". It updates the display and performs calculations if required.
+  - **`updateDisplay(value, resetError = true)`**: Updates the calculator's display with the current value, and removes any error styles if needed.
+  - **`clickHandler(input)`**: Handles user input, such as numbers, operators, and commands like "clear" and "=". It updates the display and performs calculations if required.
     - If the "=" button is clicked, the code checks for empty expressions or invalid input and displays appropriate error messages.
     - Uses `eval()` to calculate the result of the expression, with error handling for invalid operations.
