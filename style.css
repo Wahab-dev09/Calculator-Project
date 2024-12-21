@@ -1,4 +1,106 @@
-*{
-    margin:0px;
-    padding:0px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+html {
+    font-size: 15px;
+}
+body {
+    overflow: hidden;
+}
+.fullscreen {
+    width: 100vw;
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: linear-gradient(rgba(221, 223, 255, 0.35) 1px, transparent 1px), linear-gradient(to right, rgba(221, 223, 255, 0.35) 1px, transparent 1px);
+    background-size: 10px 10px;
+    background-color: #f2f2f2;
+    position: relative;
+}
+.calculator {
+    width: 90%;
+    max-width: 400px;
+    height: 90%;
+    max-height: 700px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 8px 20px -10px rgba(0, 0, 0, 0.28);
+    justify-content: flex-start;
+    border: 1px solid rgba(29, 29, 29, 0.4);
+    border-radius: 20px;
+    padding: 20px 0px;
+    gap: 15px;
+    align-items: center;
+}
+.input{
+    width: 90%;
+    height: 27%;
+    max-height: 130px;
+    padding: 0px 15px;
+    color: rgb(29, 29, 29);
+    font-size: clamp(2.7rem, 2.5909rem + 0.5455vw, 3rem);
+    background-color: rgba(139, 170, 139, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.input::selection{
+    background-color: rgb(197, 197, 197);
+}
+.button-container{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 90%;
+    gap: 10px;
+}
+.button-container>button{
+    height: 100%;
+    border: 1px solid transparent;
+    letter-spacing: -0.5px;
+    color: #2c2c2c;
+    transform: scale(1);
+    font-weight: 500;
+    background-color: rgba(211, 211, 211, 0.603);
+    font-size: 1.4rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.button-container>button:hover{
+    background-color: rgba(196, 196, 196, 0.703);
+}
+.button-container>button:active{
+        transform: scale(0.93)
+}
+.button-container>button:first-child{
+    font-size: 2rem;
+}
+.button-container>button:nth-child(2){
+    background-color: rgb(221, 127, 127);
+    grid-column: 2/5;
+    grid-row: 1/2;
+}
+.button-container>button:nth-child(2):hover{
+    background-color: rgb(199, 101, 101);
+}
+.button-container>button:last-child{
+    background-color: rgb(119, 184, 106);
+    grid-column: 4/5;
+    grid-row: 4/6;
+}
+.button-container>button:last-child:hover{
+    background-color: rgb(102, 158, 91);
+}
+.error{
+    background-color: rgba(206, 161, 161, 0.1);
+    letter-spacing: -1px;
+    font-size: clamp(1.8rem, 1.4545rem + 0.7273vw, 2.3rem);
+    color: rgb(207, 109, 109);
 }
